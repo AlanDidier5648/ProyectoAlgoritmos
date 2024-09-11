@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformada Rápida de Fourier</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <div class="menu" id="miMenu">
+
+        <a href="./index.html">Inicio</a>
+        <a href="./multiplicacionPolinomial/multPolinomial.html">Multiplicación Polinomial</a>
+        <a href="./FuerzaBruta/FuerzaBruta.html">Solución Bruta</a>
+       
+<!-------------------------------------------------------------->
+        <ul id="desplegable">
+
+        <li class="dropdown" id="desplega">
+
+        <a class="dropbtn"  href="./FFT-FinalAlgoritmos/FFT.html">Solución optimizada: Divide y Vencerás</a>
+
+        <div class="dropdown-content">
+
+        <a class="dropbtn"  href="./FFT-FinalAlgoritmos/FFT.html">Solución optimizada: Divide y Vencerás</a>
+
+        <a class="dropbtn" href="./ExpDC/expDivideVencer.html">Explicación Detallada DyC</a>
+
+        </div>
+        </li>
+
+        </ul>
+<!-------------------------------------------------------------->
+        <a href="./sobreNosotros/sobreNosotros.html">Sobre nosotros...</a>
+        <a href="#" class="icono" id="boton">&#9776;</a>
+    </div>
+
+    <div class="principio">
+        <div class="header">
+            <img src="./img/IPN-Logo.png" alt="" id="ipn"/>
+        </div>
+        <div class="header">
+            <h1>Instituto Politécnico Nacional</h1>
+            <h2>Escuela Superior de Cómputo</h2>
+        </div>
+        <div class="header">
+            <img src="./img/EscudoESCOM.png" alt="" id="escom" />
+        </div>
+    </div>
+
+    <div class="contenido">
+        <img src="./img/programar.jpg" alt="" id="prog" />
+        <div class="textoencima"><¡Bienvenidos Developers!></div>
+    </div>
+
+    <h2 class="subtitulos">INICIO</h2>
+
+    <div class="inicio" id="ini">
+        <div id="texto" class="comienzo">
+            <p>¡Bienvenido programador! Seguramente te estarás preguntando qué página es esta. Bueno, este proyecto fue desarrollado para poder ayudarte a realizar la multiplicación polinomial con un algoritmo más optmizado, el cual es la Transformada Rápida de Fourier.</p>
+            <p>Pero, ¿por qué querrías aprender sobre esta? Bueno, ¿por qué no? Aprender es divertido, además, resulta que esto realmente tiene bastantes aplicaciones. Algunas son la Criptografía, en los diferentes estándares de encriptación, análisis de imágenes, redes neuronales y muchas más. Así que aquí aprenderás sobre esto de la multiplicación polinomial de forma bruta y optimizada (con la Transformada Rápida). En ambas soluciones se muestran animaciones para hacer más fácil su entendimiento.</p>
+            <p>Si quieres saber más sobre los desarrolladores de esta página, visita la sección <a href="./sobreNosotros/sobreNosotros.html">"Sobre nosotros..."</a></p>
+            <br><br>
+            <p id="viaje">¡DISFRUTA TU VIAJE!</p>
+        </div>
+        <div id="imagen" class="comienzo">
+            <img src="./img/fourier.jpg" alt="" id="fourier">
+        </div>
+    </div>
+
+    <div class="multPolinomial" id="tF">
+        <h2 class="subtitulos">MULTIPLICACIÓN POLINOMIAL</h2>
+        <p>En palabras sencillas esto no es más que multiplicar 2 o más polinomios de grado n. De forma escueta, tenemos el polinomio A(x) y el B(x), 
+            entonces tenemos que encontrar el producto C(x) que sale de A(x)*B(x). Entonces <b>C(x)=A(x)*B(x)</b>, donde A, B y C son polinomios. <br>
+        Para estar todos en la misma sintonía, no está de más recordar un poco el concepto de polinomio, así como a lo que nos referimos cuando hablamos 
+        de un grado de un polinomio, el método más básico que se utiliza para llevar a cabo esta operación, y, ... ¿por qué no?, unas aplicaciones en la vida cotidiana 
+        de lo que puede tener multiplicar polinomios.<br>
+        Para ver la explicación más amplia, por favor da click en el botón azul de abajo. </p>
+        <div id="productoPol"><img src="./img/producto.png" alt=""></div>
+        <div class="boton"><button><a href="./multiplicacionPolinomial/multPolinomial.html">Ver explicación más detallada</a></button></div>
+    </div>
+
+    <div class="bruta" id="br">
+        <h2 class="subtitulos">SOLUCIÓN BRUTA</h2>
+        <p>
+            En este punto, y en esta sección nosotros mostraremos como obtener el polinomio resultado de multipliar dos polinomios por medios de fuerza bruta,
+            nosotros tenemos dos polinomios, podemos tener polinomios de grado n, pero nos limitaremos a obtener polinomios de un grado máximo de 5,  tendremos
+            Polinomio 1 y Polinomio 2, de manera natural empezaremos multiplicando cada termino  del Polinomio 1 por el Polinomio 2, lo que nos dara  un total 
+            de 5 polinomios resultantes de la multiplicación, estos los acomodaremos en una matriz de manera ordenada respectivamente, para despues dar el siguente paso, 
+            este será sumar las diagonales de la matriz obteniendo asi los coeficientes y literales de nuestro polinomio resultante de multiplicar dos polinomios, en el ultimo 
+            paso solo debemos acomodar el polinomio resultado en orden de grado, dandonos asi nuestro resultado.
+
+           
+        </p>
+        <div id="fuerzaBruta"><img src="./img/brut.jpg" alt="" class="imgBruta"></div>
+        <div class="boton"   >
+            <button><a href="./ExpBruteForce/expDetallada.html"  >Ver explicación más detallada</a></button>
+            <button><a href="./FuerzaBruta/FuerzaBruta.html" >Ver animacion y calcular</a></button></div>
+    </div>
+
+    <div class="optimizada" id="opt">
+        <h2 class="subtitulos">Solución Divide y Venceras: Transformada Rápida de Fourier</h2>
+        <p>Hablando de la Transformada Rápida de Fourier esta nos permite calcular la transformada discreta de fourier y su inversa.
+            Esta transformada desde el tratamiento digital de señales y filtrado digital en general a la resolución de ecuaciones en 
+            derivadas parciales o los algoritmos de multiplicación rápida de grandes enteros. El algoritmo de tranformada rapida impone algunas limitaciones 
+            en la señal y en el espectro resultante ya que la señal muestreada y que se va a transformar debe consistir de un número de 
+            muestras igual a una potencia de dos. La mayoría de los analizadores de tranformada rapida permiten la 
+            transformación de 512, 1024, 2048 o 4096 muestras. El rango de frecuencias cubierto por el análisis depende de la 
+            cantidad de muestras recogidas y de la proporción de muestreo. La transformada rápida de Fourier es de importancia 
+            fundamental en el análisis matemático y ha sido objeto de numerosos estudios. La aparición de un algoritmo eficaz para 
+            esta operación fue un hito en la historia de la informática.
+        </p>
+        <div id="fuerzaBruta"><img src="./img/trans.png" alt="" class="imgRapida" style="width: 700px;"></div>
+        
+        <div class="boton">
+            <button><a href="./ExpDC/expDivideVencer.html">Ver explicación más detallada</a>
+            </button>
+
+            <button><a href="./FFT-FinalAlgoritmos/FFT.html">Ver animación</a>
+            </button>
+        </div>
+
+    </div>
+
+    
+
+    <footer>
+        <p>&copy; Copyright</p>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> 
+  	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

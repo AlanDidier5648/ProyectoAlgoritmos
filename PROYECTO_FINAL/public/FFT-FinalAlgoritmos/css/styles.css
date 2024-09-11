@@ -1,0 +1,178 @@
+:root{
+    --first: #001B48;
+    --second: #02457A;
+    --third: #018ABE;
+    --fourth: #97CADB;
+    --fifth : #d6e8ee;
+    --white: #fff;
+}
+/*-----------------------------------------------------*/    
+
+#despledable{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#desplega{
+float: left;
+}
+
+#desplega a, .dropbtn {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+
+#desplega a:hover, .dropdown:hover .dropbtn {
+    background-color: royalblue;
+    }
+
+#desplega.dropdown {
+        display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: royalblue;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+ display: block;
+ }
+          
+/*-----------------------------------------------------*/  
+
+#boton{
+    color:#fff;
+}
+
+body
+{
+    font-family: 'Quicksand', sans-serif!important;
+    background-color:var(--white);
+    color:black;
+}
+
+h2
+{
+    text-align: center;
+    color: black;
+}
+
+h4
+{
+text-align: center;
+color: black;
+}
+
+.img-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+button
+{
+    background-color: #001848!important;
+}
+#canvas{
+    margin-top: 5px;
+}
+
+#form1, #form2{
+    margin: 10px 0px;
+    padding: 35px 10px;
+    border-radius: 15px;
+    background-color: #001848;
+}
+
+span[id^=polinomio3],span[id^=polinomio4],span[id^=resultadosP], span[id^="resultado"]
+{
+    font-size: 1.5rem;
+    border-radius: 99rem;
+    color: #001B48;
+}
+
+#comparaciones{
+    color: #001B48;
+    font-size: 2rem;
+    font-weight:bolder;
+}
+
+#cota{
+    text-align: center;
+}
+
+#dyv {
+  border-top: 2px solid white;
+  margin-top: 52px;
+}
+
+.termino-algebraico{
+    display: flex;
+    flex-direction: row;
+}
+
+.termino-algebraico label{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.bloque{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.entrada{
+    width: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(233, 216, 216);
+}
+
+.entrada:focus{
+    outline: none;
+}
+
+.array-container{
+    background-color: transparent!important;
+}
+
+.array-element{
+    background-color: #001848!important;
+    margin: 3px 5px;
+    border: none!important;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.array-element p{
+    color: fff;
+    font-size: .7em;
+    margin: 0px;
+}
